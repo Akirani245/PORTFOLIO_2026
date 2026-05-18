@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -229,11 +229,27 @@ nav.solid .hamburger span{background:var(--ink)}
 
 /* ── FOOTER ── */
 footer{
-  background:#0b0a09;padding:20px 48px;
-  display:flex;align-items:center;justify-content:space-between;
+  background:#0b0a09;padding:24px 48px 20px;
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+}
+.footer-top{
+  width:100%;display:flex;align-items:center;justify-content:space-between;
   flex-wrap:wrap;gap:8px;
 }
 footer p{font-size:9px;letter-spacing:.1em;color:rgba(255,255,255,.16);text-transform:uppercase}
+.footer-disclaimer{
+  width:100%;
+  border-top:1px solid rgba(255,255,255,.06);
+  padding-top:14px;
+  font-size:8.5px;
+  line-height:1.8;
+  color:rgba(255,255,255,.25);
+  text-align:center;
+  letter-spacing:.02em;
+  max-width:820px;
+  margin:0 auto;
+  font-style:italic;
+}
 
 /* ── LIGHTBOX ── */
 .lightbox{
@@ -315,7 +331,8 @@ footer p{font-size:9px;letter-spacing:.1em;color:rgba(255,255,255,.16);text-tran
   .cs-item a,.cs-item span{font-size:14px}
 
   /* Footer */
-  footer{padding:16px 20px;justify-content:center;text-align:center}
+  footer{padding:20px 20px 16px;text-align:center}
+  .footer-top{justify-content:center}
 
   /* Lightbox arrows on mobile */
   .lb-nav{width:36px;height:36px;font-size:16px}
@@ -465,8 +482,11 @@ footer p{font-size:9px;letter-spacing:.1em;color:rgba(255,255,255,.16);text-tran
 </div>
 
 <footer>
-  <p>© 2025 Arthur M. Pasiolan · Architectural Portfolio</p>
-  <p>TIP QC · B.S. Architecture</p>
+  <div class="footer-top">
+    <p>© 2025 Arthur M. Pasiolan · Architectural Portfolio</p>
+    <p>TIP QC · B.S. Architecture</p>
+  </div>
+  <p class="footer-disclaimer">This portfolio page is created exclusively for personal and professional presentation purposes only and is not intended for business use. All works displayed herein are protected intellectual property. Any unauthorized copying, reproduction, or use of the content without the owner's permission is strictly prohibited.</p>
 </footer>
 
 <!-- ══ LIGHTBOX ══ -->
